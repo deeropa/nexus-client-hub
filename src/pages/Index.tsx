@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Zap, Shield, Settings, Download, ChevronRight, Star } from "lucide-react";
+import nexusLogoSmall from "@/assets/nexus-logo-small.png";
+import nexusLogoFull from "@/assets/nexus-logo-full.png";
 
 const Index = () => {
   const features = [
@@ -26,10 +28,8 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">N</span>
-            </div>
+          <div className="flex items-center gap-3">
+            <img src={nexusLogoSmall} alt="Nexus Client" className="w-10 h-10 rounded-lg" />
             <span className="text-xl font-bold tracking-tight">Nexus Client</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
@@ -155,9 +155,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-primary-foreground font-bold">N</span>
-              </div>
+              <img src={nexusLogoSmall} alt="Nexus Client" className="w-8 h-8 rounded-lg" />
               <span className="font-bold">Nexus Client</span>
             </div>
             <p className="text-muted-foreground text-sm">
