@@ -82,13 +82,19 @@ export default function Index() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
+              asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 group"
-              onClick={() => scrollTo("download")}
             >
-              <Download className="w-5 h-5 mr-2" />
-              Download Now
-              <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              <a
+                href="https://zale.wtf/deeropa/Nexus.jar"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Download className="w-5 h-5 mr-2" />
+                Download Now
+                <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
 
             <Button
@@ -150,45 +156,45 @@ export default function Index() {
       <section id="download" className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/10 to-background" />
         <div className="relative z-10 container mx-auto px-6 text-center">
-          <div className="max-w-4xl mx-auto p-12 rounded-3xl border border-primary/20 bg-card/30 backdrop-blur-xl">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to <span className="text-primary">Level Up</span>?
-            </h2>
-            <p className="text-muted-foreground mb-8">
-              Join thousands of players using Nexus Client.
-            </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 px-10 py-6 text-lg">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Download <span className="text-primary">Nexus Client</span>
+          </h2>
+          <Button
+            asChild
+            size="lg"
+            className="bg-primary hover:bg-primary/90 text-lg px-10 py-6"
+          >
+            <a
+              href="https://zale.wtf/deeropa/Nexus.jar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Download className="w-5 h-5 mr-2" />
               Download Free
-            </Button>
-          </div>
+            </a>
+          </Button>
         </div>
       </section>
-      
-{/* ================= COMMUNITY ================= */}
-<section id="community" className="py-32 text-center">
-  <h2 className="text-4xl md:text-5xl font-bold mb-6">
-    Join the <span className="text-primary">Community</span>
-  </h2>
-  <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-    Connect with players, share configs, and stay updated.
-  </p>
 
-  <Button
-    asChild
-    size="lg"
-    variant="outline"
-  >
-    <a
-      href="https://discord.gg/JUQxgEqHp3"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Join Discord
-    </a>
-  </Button>
-</section>
+      {/* ================= COMMUNITY ================= */}
+      <section id="community" className="py-32 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          Join the <span className="text-primary">Community</span>
+        </h2>
+        <p className="text-muted-foreground max-w-xl mx-auto mb-8">
+          Connect with players, share configs, and stay updated.
+        </p>
 
+        <Button asChild size="lg" variant="outline">
+          <a
+            href="https://discord.gg/JUQxgEqHp3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Discord
+          </a>
+        </Button>
+      </section>
 
       {/* ================= FOOTER ================= */}
       <footer className="border-t border-border/50 py-12 text-center text-muted-foreground">
