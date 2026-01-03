@@ -164,19 +164,31 @@ export default function Index() {
           </div>
         </div>
       </section>
+      
+{/* ================= COMMUNITY ================= */}
+<section id="community" className="py-32 text-center">
+  <h2 className="text-4xl md:text-5xl font-bold mb-6">
+    Join the <span className="text-primary">Community</span>
+  </h2>
+  <p className="text-muted-foreground max-w-xl mx-auto mb-8">
+    Connect with players, share configs, and stay updated.
+  </p>
 
-      {/* ================= COMMUNITY ================= */}
-      <section id="community" className="py-32 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Join the <span className="text-primary">Community</span>
-        </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-          Connect with players, share configs, and stay updated.
-        </p>
-        <Button size="lg" variant="outline">
-          Join Discord
-        </Button>
-      </section>
+  <Button
+    asChild
+    size="lg"
+    variant="outline"
+  >
+    <a
+      href="https://discord.gg/JUQxgEqHp3"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Join Discord
+    </a>
+  </Button>
+</section>
+
 
       {/* ================= FOOTER ================= */}
       <footer className="border-t border-border/50 py-12 text-center text-muted-foreground">
