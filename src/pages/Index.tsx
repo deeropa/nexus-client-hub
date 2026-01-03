@@ -100,6 +100,22 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Community Section */}
+<section id="community" className="py-32 relative">
+  <div className="container mx-auto px-6 text-center">
+    <h2 className="text-4xl md:text-5xl font-bold mb-4">
+      Join the <span className="text-primary">Community</span>
+    </h2>
+    <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-8">
+      Connect with other players, share configs, and stay updated.
+    </p>
+    <Button size="lg" variant="outline">
+      Join Discord
+    </Button>
+  </div>
+</section>
+
+
       {/* Features Section */}
       <section id="features" className="py-32 relative">
         <div className="container mx-auto px-6">
