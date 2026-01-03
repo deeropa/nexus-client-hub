@@ -179,15 +179,15 @@ export default function Index() {
       {/* ================= COMMUNITY ================= */}
       <section id="community" className="py-32 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Join the <span className="text-primary">Community</span>
+          Join the <span className="text-primary">Community (Not Available Right Now)</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-          Connect with players, share configs, and stay updated.
+          CREATING A NEW ONE.
         </p>
 
         <Button asChild size="lg" variant="outline">
           <a
-            href="https://discord.gg/JUQxgEqHp3"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
           >
